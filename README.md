@@ -2,7 +2,7 @@
 
 This is an animation demonstration of a beautiful design by [@ElijahBozniak](https://dribbble.com/shots/6315218-IoT-Humidity-App-Slider). Actually, it's implemented partially because of time limitation and some library bugs (which prevented me from making it as real as possible).
 
-## [Download The APK](__assets__/app.apk)
+## [Download The APK](__assets__/app.apk?raw=true)
 
 ### What about IOS?
 
@@ -10,9 +10,9 @@ I have to say that there is no IOS version, simply because i don't have a IOS de
 
 ## Screenshots
 
- <img align="left"  src="__assets__/img1.jpg">
+ <img align="left" width="320" height="640" src="__assets__/img1.jpg">
  
- <img align="right"  src="__assets__/img2.jpg">
+ <img align="right" width="320" height="640"  src="__assets__/img2.jpg">
 <p align="center">
  <img width="320" height="640" src="__assets__/vid.gif">
 </p>
