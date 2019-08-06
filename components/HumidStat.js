@@ -13,7 +13,7 @@ import {
   State,
   TouchableNativeFeedback
 } from 'react-native-gesture-handler';
-// import Icon from 'react-native-vector-icons/EvilIcons';
+import Icon from 'react-native-vector-icons/EvilIcons';
 import InfoIcon from 'react-native-vector-icons/AntDesign';
 import { scaleLinear } from 'd3-scale';
 import CurvedLine from './CurvedLine';
@@ -32,7 +32,10 @@ const {
   set,
   greaterOrEq,
   lessOrEq,
-  call
+  call,
+  interpolate,
+  Extrapolate,
+  concat
 } = Animated;
 
 const { width: WIDTH, height: HEIGHT } = Dimensions.get('window');
@@ -57,14 +60,14 @@ class HumidStat extends Component {
         currently, vector icons have a lot impact on performance. 
         so i decided to drop the rotation animation
     */
-    /* 
+
     const rotation = interpolate(this.circleTrueY, {
       inputRange: [UPPER_BOUND, LOWER_BOUND],
       outputRange: [3 * 360, 0],
       extrapolate: Extrapolate.CLAMP
     });
     this.rotation = concat(rotation, 'deg');
-    */
+
     this.values = [
       { v: 100, d: true },
       { v: 75, d: true },
@@ -159,6 +162,7 @@ class HumidStat extends Component {
       text: `${Math.round(this.humidityPercentageScale(yPos))}%`
     });
   };
+
   _closeInfoDialog = () => {
     this.setState({ isDialogOpen: false });
   };
@@ -216,11 +220,11 @@ class HumidStat extends Component {
               ]}
             >
               {/* dropping this animation due to performance reasons )-; */}
-              {/* <Icon
+              <Icon
                 name={'spinner-2'}
                 color={'#333'}
                 size={CIRCLE_RADIUS * 2}
-              /> */}
+              />
             </Animated.View>
           </PanGestureHandler>
         </View>
