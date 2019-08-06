@@ -20,8 +20,8 @@ I have to say that there is no IOS version, simply because i don't have a IOS de
 
 ## Made Possible With:  
 + [React Native](https://facebook.github.io/react-native/)
-+  [React Native Reanimated](https://facebook.github.io/react-native/)
-+  [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler)
++  [React Native Reanimated](https://github.com/kmagiera/react-native-reanimated)
++  [React Native Gesture Handler](https://github.com/kmagiera/react-native-gesture-handler)
 +  [React Native Popup Dialog](https://github.com/jacklam718/react-native-popup-dialog)
 +  [React Native SVG](https://github.com/react-native-community/react-native-svg)
 +  [d3-scale](https://github.com/d3/d3-scale)
